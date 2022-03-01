@@ -1,10 +1,10 @@
 const basePath = process.cwd();
-const { NETWORK } = require(`${basePath}/constants/network.js`);
+const { NETWORK } = require(`${basePath}/src/constants/network.js`);
 const fs = require("fs");
 const sha1 = require(`${basePath}/node_modules/sha1`);
 const { createCanvas, loadImage } = require('canvas');
 const buildDir = `${basePath}/build`;
-const layersDir = `${basePath}/layers`;
+const layersDir = `${basePath}/src/layers`;
 const {
   format,
   baseUri,
@@ -31,7 +31,7 @@ var metadataList = [];
 var attributesList = [];
 var dnaList = new Set();
 const selectedTraitsList = new Set();
-const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
+const HashlipsGiffer = require(`${basePath}/src/modules/HashlipsGiffer.js`);
 
 const { selectTraits, createDna, isDnaUnique, constructLayerToDna, filterDNAOptions } = require('./dna');
 const { needsExclusion } = require('./exclusions');

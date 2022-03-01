@@ -1,5 +1,5 @@
 const basePath = process.cwd();
-const { NETWORK } = require(`${basePath}/constants/network.js`);
+const { NETWORK } = require(`${basePath}/src/constants/network.js`);
 const fs = require("fs");
 
 const {

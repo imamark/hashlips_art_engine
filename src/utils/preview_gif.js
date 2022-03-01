@@ -7,7 +7,7 @@ const { format, preview_gif } = require(`${basePath}/src/config.js`);
 const canvas = createCanvas(format.width, format.height);
 const ctx = canvas.getContext("2d");
 
-const HashlipsGiffer = require(`${basePath}/modules/HashlipsGiffer.js`);
+const HashlipsGiffer = require(`${basePath}/src/modules/HashlipsGiffer.js`);
 let hashlipsGiffer = null;
 
 const loadImg = async (_img) => {
