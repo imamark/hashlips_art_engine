@@ -10,6 +10,8 @@ const description = "Remember to replace this description";
 const baseUri = "ipfs://NewUriToReplace";
 const sellerFeeBasis = 100; // Indicates a 1% seller fee.
 const feeRecipient = "0xC55141cE5b30CAD47b31D9237243b2df62c653ad";
+const shuffleCollection = true;
+const shuffleDir = `${basePath}/build/shuffelImages`;
 
 const solanaMetadata = {
   symbol: "YC",
@@ -123,4 +125,6 @@ module.exports = {
   solanaMetadata,
   gif,
   preview_gif,
+  shuffleCollection,
+  shuffleDir,
 };
