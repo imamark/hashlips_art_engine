@@ -45,6 +45,8 @@ const shuffleLayerConfigurations = false;
 
 const debugLogs = false;
 
+const addRarityAttribute = true;
+
 const format = {
   width: 512,
   height: 512,
@@ -121,6 +123,7 @@ module.exports = {
   pixelFormat,
   text,
   namePrefix,
+  addRarityAttribute,
   network,
   solanaMetadata,
   gif,
